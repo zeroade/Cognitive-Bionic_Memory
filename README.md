@@ -69,3 +69,37 @@ cbma/
 - [ ] 用 embedding + FAISS/Chroma 替換關鍵字檢索
 - [ ] 替換真實閱讀筆記數據
 - [ ] 加入 Web UI（視覺化緩衝區和 KG）
+
+
+## AI-Friendly Project Summary (for LLMs / Agents)
+
+**Project Name:** Cognitive-Bionic Memory Architecture (CBMA)  
+**Core Thesis (one sentence):** AI memory should emulate human cognitive constraints (limited working memory, selective consolidation, active forgetting, context-dependent binding) as functional enablers of abstraction, generalization, and lifelong adaptation — not obstacles to bypass with brute-force scaling.
+
+**Architecture Overview (layers):**
+- Layer 0: Representation — Dual-track (Symbolic KG + Neural LLM), confidence-gated arbitration
+- Layer 1: Storage — Episodic (saliency-tagged events) + Semantic (generalized patterns), bidirectional compensation, temporary binding via context weights
+- Layer 2: Processing — Limited attention buffer (~4–7 chunks), forced chunking/schema, recurrent activation loop
+- Layer 3: Output Regulation — Cognitive load monitoring, scaffolding, dual-coding multimodal
+- Axis: Consolidation–Forgetting–Restructuring Engine — Periodic offline process, saliency-driven (user reaction + repetition + pivot detection)
+
+**Current Implementation Status (2026-02):**
+- Mock LLM only (placeholder responses)
+- Keyword-based retrieval (no embeddings/vectors yet)
+- JSON-based KG & episodic/semantic stores
+- Manual / auto consolidation trigger
+- CLI demo only
+
+**Key Hypotheses to Validate:**
+1. Limited buffer forces better abstraction than unlimited context.
+2. Confidence-gated symbolic override reduces hallucinations more than pure RAG.
+3. Saliency signals (reaction strength + repeat count) enable meaningful long-term consolidation without brute-force summarization.
+
+**Next Milestones (priority order):**
+1. Replace MockLLM with real API/local model
+2. Add sentence-transformers + FAISS/Chroma for semantic retrieval
+3. Implement dynamic context weighting for temporary binding
+4. Add logging/visualization of buffer changes & KG updates
+5. Run long multi-session conversations to test consolidation effects
+
+Feel free to feed this section directly into any LLM as context for code suggestions, experiments, or critiques.
